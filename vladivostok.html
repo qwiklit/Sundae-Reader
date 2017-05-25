@@ -1,0 +1,29 @@
+<style>
+    body {background: #efefef; margin-left: 5%; margin-right: 5%;}
+ 
+   
+</style>
+
+<h1>Tapestry Story Reader</h1>
+
+<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+ 
+<div id="qznews"></div>
+<a href="http://janosgyerik.github.io/jquery-upvote/"><h1>For Upvotes</h1></a>
+ 
+<script>
+YUI().use('yql', function(Y){
+    var query = 'select * from rss(0,20) where url = "http://www.lightspeedmagazine.com/rss-2/"'
+    var q = Y.YQL(query, function(r){
+        //r now contains the result of the YQL Query as a JSON
+        var feedmarkup = '<p>'
+        var feed = r.query.results.item // get feed as array of entries
+        for (var i=0; i<feed.length; i++){
+            feedmarkup += '<a href="' + feed[i].link + '">'
+            feedmarkup += '<h2>' + feed[i].title + '</h2>' + '</a>'
+            feedmarkup += feed[i].description + '</p>' + '<hr>'
+        }
+        document.getElementById('qznews').innerHTML = feedmarkup
+    })
+})
+</script>
