@@ -19,7 +19,7 @@ document.getElementById("sidebar-nav").innerHTML =
      '<input type="text" id="myInput" class="myInput" onkeyup="myFunction()" placeholder="     Search" title="Type in a name">' +
 '<li><a href="">American Short Fiction</a></li>' +
 '<li><a href="">Another Chicago Magazine</a></li>' +
-'<li><a href="">The Anthill</a></li>' +
+'<li><a id="anthill" href="#">The Anthill</a></li>' +
 '<li><a href="">Appalachian Heritage</a></li>' +
 '<li><a href="">Asian American Literary Review</a></li>' +
 '<li><a href="">At Length Magazine</a></li>' +                       
@@ -312,3 +312,5 @@ function myFunction5() {
 
 
 
+
+    

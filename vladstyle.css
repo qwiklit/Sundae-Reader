@@ -24,14 +24,16 @@
 
 .row h3 p {  display: block;
 
-height: 100%;
-max-height: 390px;
+height: auto;
+
     overflow: hidden;
   margin-left:  auto;
   margin-right: auto;
 width: 100%;
 text-align: center;
 }
+
+
 
 .row h3 p img {background-position: center; margin-left: auto; margin-right: auto; }
 .row h3 {text-align: justify;}
@@ -244,3 +246,4 @@ hr {color: black;}
 
 /*Main Header*/
 .mainheader { height: 55px;}
+.feedlist h3 p {height: auto;}

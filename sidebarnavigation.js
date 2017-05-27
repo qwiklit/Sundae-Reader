@@ -7,7 +7,7 @@ document.getElementById("sidebar-nav").innerHTML =
  '<p class="sidebar-divider">Tapestry’s library to find thousands of stories from around the web.</p>' +
  '<div class="sidebar-menu">' +
  '<div class="has-submenu">' +
- '<a class="menu-item" href="vladivostokmain.html">' +
+ '<a class="menu-item" href="index.html">' +
  '<i class="fa fa-home" style="color:white">' +
  '</i>' +
  '<em>The Latest</em>' +
